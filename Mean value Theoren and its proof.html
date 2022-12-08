@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>
+Mean value theorem
+</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<BODY >
+<center><H1>Mean value theorem</H1></center>
+
+<p>If \(f\) is a function that is continuous on \([a,b]\) and differentiable on \((a,b)\), then there exists some \(c\) in \((a,b)\) where</p>
+\[f'(c) = \frac{f(b)-f(a)}{b-a}\]
+<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mvt2.svg/1024px-Mvt2.svg.png" width="300"/></center>
+<hr>
+<h4>Proof:</h4>
+<p>Let \(A\) be the point \((a,f(a))\) and \(B\) be the point \((b,f(b))\).</p>
+<p>Note that the slope of the secant line to \(f\) through \(A\) and \(B\) is \(\displaystyle{\frac{f(b)-f(a)}{b-a}}\).</p>
+<p>Combining this slope with the point \((a,f(a))\) gives us the equation of this secant line:</p>
+\[y = \frac{f(b)-f(a)}{b-a} (x-a) + f(a)\]
+<p>Let \(F(x)\) share the magnitude of the vertical distance between a point \((x,f(x))\) on the graph of the function \(f\) and the corresponding point on the secant line through \(A\) and \(B\), making \(F\) positive when the graph of \(f\) is above the secant, and negative otherwise.</p>
+<p>More succinctly,</p>
+\[F(x) = f(x) - \left[\frac{f(b)-f(a)}{b-a} (x-a) + f(a)\right]\]
+<p>We intend to show that \(F(x)\) satisfies the three hypotheses of Rolle's Theorem.</p>
+<p>First, \(F\) is continuous on \([a,b]\), being the difference of \(f\) and a polynomial function, both of which are continuous there.</p>
+<p>Second, \(F\) is differentiable on \((a,b)\), for similar reasons.  \(F\) is the difference of \(f\) and a polynomial function, both of which are differentiable there.</p>
+<p>Lastly, note at \(a\) and \(b\),</p>
+\[F(a) = f(a) - [0 + f(a)] = 0 \quad \textrm{ and } \quad F(b) = f(b) - [f(b) - f(a) + f(a)] = 0\]
+<p>Thus, the conditions of Rolle's Theorem are satisfied and there must exist some \(c\) in \((a,b)\) where \(F'(c) = 0\).</p>
+<p>Consider the derivative of \(F(x)\):</p>
+\[(F'(x) = f'(x) - \frac{f(b)-f(a)}{b-a}\]
+<p>Thus, for some \(c\) in \((a,b)\),</p>
+\[0 = f'(c) - \frac{f(b)-f(a)}{b-a}\]
+<p>Equivalently, we have shown there exists some \(c\) in \((a,b)\) where</p>
+\[f'(c) = \frac{f(b)-f(a)}{b-a}\]
+
+</BODY>
+</html> 
